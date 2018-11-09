@@ -7,9 +7,8 @@ contract TTT
     uint8[] _board = new uint8[](9);
     address _owner;
     
-    address _player1;
-    address _player2;
-    address _lastWinner;
+    address p1;
+    address p2;
 
     bool _openSlots = true;
     bool _gameInProgress = false;
@@ -20,5 +19,10 @@ contract TTT
     uint[][] _winStates = [[0,1,2],[3,4,5],[6,7,8], 
                           [0,3,6],[1,4,7],[2,5,8], 
                           [0,4,8],[2,4,6]];
+                          
+    constructor()
+    public {
+        _owner = msg.sender;
+    }
 
 }

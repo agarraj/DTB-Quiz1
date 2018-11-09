@@ -9,7 +9,7 @@ contract TicTacToe {
    
     //This makes sure that quizMaster cannot become a particiant
     modifier notPlayer1(){
-        require(msg.sender!=player1,"Player1 Player2 can'nt be same");
+        require(msg.sender!=player1,"Player1 Player2 can't be same");
     _;}
    
     constructor ()
@@ -25,7 +25,7 @@ contract TicTacToe {
         player2 = msg.sender;
     }
    
-    uint[][]  winning_Positions = [[0,1,2], [0,3,6],[2,5,8],[3,4,5],[2,4,6],[6,7,8],[1,4,7],[0,4,8], ];
+    uint[][]  winning_Positions = [[0,1,2], [0,3,6],[2,5,8],[3,4,5],[2,4,6],[6,7,8],[1,4,7],[0,4,8] ];
    
     function checkWinner()
     public

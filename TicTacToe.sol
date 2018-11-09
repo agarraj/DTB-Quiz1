@@ -12,6 +12,7 @@ contract TicTacToe {
         require(msg.sender!=player1,"Player1 Player2 can't be same");
     _;}
    
+    //By default the player1 is initiaing the game , on the other hand player2 is registering as player2
     constructor ()
     public
     {

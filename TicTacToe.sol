@@ -25,4 +25,14 @@ contract TTT
         _owner = msg.sender;
     }
 
+     function registerPlayer1() private
+    {
+            p1 = msg.sender;
+    }
+    
+    function registerPlayer2(address player2) private
+    {
+            p2 = msg.sender;
+    }
+
 }

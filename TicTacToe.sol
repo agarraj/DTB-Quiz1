@@ -1,6 +1,6 @@
 // this is main file
 
-pragma solidity 0.4.11;
+pragma solidity ^0.4.24;
 
 contract TTT
 {
